@@ -1,0 +1,50 @@
+<!DOCTTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash Register</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="header">
+      <h1>Cash Register Project</h1>
+      <span class="change-due" id="change-due"></span>
+      <h3>Enter cash from customer</h3>
+      <input type="number" id="cash" class="input">
+      <button id="purchase-btn" class="button"><span>Purchase</span></button>
+    </header>
+    <main>
+      <div class="container-base">
+        <div class="container-head">
+          <div class="bg-total">
+            <p id="price">Total: $1.87</p>
+          </div>
+        </div>
+        <div class="container-neck">
+        </div>
+        <div class="container-body">
+          <div class="container-acessoris">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <div class="container-content">
+            <h2>Change in drawer:</h2>
+            <div id="unit" class="change-in-drawer"></div>
+          </div>
+        </div>
+        <div class="container-footer">
+          <div class="drawer"></div>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>

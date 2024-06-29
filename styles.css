@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+:root {
+  --bg-color: #F1F8E8;
+  --component-color: #C8CFA0;
+  --btn-color: #EF9C66;
+  --shadow-color: #FFE9D0;
+
+  --font-family: 'poppins', sans-serif;
+}
+
+* {
+  font-size: 1rem;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 70vw;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: Bold;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.change-due {
+    display: none;
+}
+
+.header h3 {
+  font-size: 1rem;
+  text-align: center;
+  margin: 10px 20px;
+}
+
+.input {
+  display: block;
+  width: 300px;
+  height: 40px;
+  border: 1px solid gray;
+  border-radius: 5px;
+  font-size: 1.5em;
+  padding: 10px;
+  transition: all .2s ease;
+}
+
+.input:hover {
+  box-shadow: 6px 6px var(--shadow-color);
+}
+
+.input:focus {
+  outline: 3px solid var(--shadow-color);
+  box-shadow: none;
+}
+
+.button {
+  margin: 20px 0 20px 0;
+  padding: 10px 30px;
+  border-radius: 5px;
+  border: none;
+  background-color: var(--btn-color);
+  color: gray;
+  transition: all .2s ease;
+}
+
+.button span {
+  font-weight: bold;
+  font-size: 15px;
+  transition: all .2s;
+}
+
+.button:hover {
+  color: black;
+  cursor: pointer;
+}
+
+.button:active {
+  color: black;
+  transform: scale(94%);
+}
+
+.container-base {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  margin: auto;
+  width: 85vw;
+  height: 90vw;
+}
+
+.container-head {
+  background-color: var(--component-color);
+  margin-left: -100px;
+  margin-top: 10px; 
+  width: 300px;
+  border-radius: 10px;
+}
+
+.bg-total {
+  background-color: black;
+  padding: 1px 20px;
+  margin: 15px 20px;
+  border-radius: 7px;
+}
+
+.bg-total p {
+  font-size: 15px;
+  color: white;
+}
+
+.container-neck {
+  width: 70px;
+  height: 50px;
+  background-color: var(--component-color);
+  margin-left: -250px;
+}
+
+.container-body {
+  background-color: var(--component-color);
+  width: 500px;
+  height: 450px;
+  border-radius: 20px 20px 0 0;
+  bottom: 0;
+}
+
+.container-acessoris {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(20px, 1fr));
+  gap: 10px;
+  width: 100px;
+  height: 100px;
+  margin: 40px auto 0 40px;
+}
+
+.container-acessoris div {
+  border-radius: 5px;
+  background-color: black;
+  transition: all .3s;
+}
+
+.container-acessoris div:hover {
+  cursor: pointer;
+  background-color: var(--btn-color);
+}
+
+.container-acessoris div:active {
+  transform: scale(90%);
+}
+
+.container-content {
+  margin-top: 40px;
+  margin-bottom: 40px;
+  width: 250px;
+  height: 350px;
+  margin-right: 40px;
+  margin-left: auto;
+  border-radius: 10px;
+  background-color: var(--bg-color);
+}
+
+.container-content h2 {
+  margin-bottom: 15px;
+  font-size: 1.3em;
+  padding: 10px 10px 0 10px;
+}
+
+.change-in-drawer {
+  padding-left: 10px;
+}
+
+.amount-unit {
+  font-size: 1.2em;
+}
+
+.container-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--component-color);
+  width: 500px;
+  height: 70px;
+  margin-top: 10px;
+  margin-bottom: 10px
+}
+
+.drawer {
+  width: 35px;
+  height: 35px;
+  border-radius: 20px;
+  background-image: conic-gradient(var(--btn-color), black);
+  transition: all .3s;
+}
+
+.drawer:hover {
+  cursor: pointer;
+}
+
+.drawer:active {
+  transform: rotateZ(-180deg)
+}
